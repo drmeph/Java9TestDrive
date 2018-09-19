@@ -1,0 +1,6 @@
+"C:\Program Files\Java\jdk-10.0.2\bin\javac.exe" --release 9 -d target/classes/java9 src\main\java\com\drmeph\java9testdrive\MultiReleaseTester.java
+"C:\Program Files\Java\jdk-10.0.2\bin\javac.exe" --release 8 -d target/classes/java8 src\main\java8\com\drmeph\java9testdrive\MultiReleaseTester.java
+
+"C:\Program Files\Java\jdk-10.0.2\bin\jar.exe" -c -f target/test.jar -C target/classes/java8 . --release 9 -C target/classes/java9 .
+"C:\Program Files\Java\jdk1.8.0_181\bin\java.exe" -cp target/test.jar com.drmeph.java9testdrive.MultiReleaseTester
+"C:\Program Files\Java\jdk-10.0.2\bin"\java -cp target/test.jar com.drmeph.java9testdrive.MultiReleaseTester
