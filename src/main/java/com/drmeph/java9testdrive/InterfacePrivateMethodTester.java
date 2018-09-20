@@ -1,5 +1,15 @@
 package com.drmeph.java9testdrive;
 
+/**
+ * Java 9 interfaces can have following type of variables/methods.
+ *
+ * Constant variables
+ * Abstract methods
+ * Default methods
+ * Static methods
+ * Private methods
+ * Private Static methods
+ */
 public class InterfacePrivateMethodTester {
 
     public static void main(String[] args) {
