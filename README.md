@@ -14,7 +14,7 @@ The following instructions will get you a copy of the project up and running on 
 What do things you need to install the software and how to install them
 
 1) Install [Java SE 10](https://www.oracle.com/technetwork/java/javase/downloads/index.html) JDK
-2) Install IDEA
+2) Install [IDEA](https://www.jetbrains.com/idea/)
 
 ### Installing
 Checkout the Java9TestDrive project
@@ -66,3 +66,16 @@ A module’s properties are defined in a module declaration, a file module-inf
 It gets compiled into a module-info.class, called module descriptor, and ends up in the JAR’s root. 
 This descriptor is the only difference between a plain JAR and a modular JAR.
 
+* **src/main/java/module-info.java** you will find the declaration of *java9testdrive* module
+* **src/main/java/com/drmeph/java9testdrive** package contains the main class and more generally the sources for the 
+*java9testdrive* module
+
+### Run the module
+1) Compile the sources
+```
+javac -d target\mods\com.drmeph.java9testdrive src\main\java\module-info.java src\main\java\com\drmeph\java9testdrive\ModulesTester.java
+``` 
+2) Run the module
+```
+java --module-path target\mods -m com.drmeph.java9testdrive/com.drmeph.java9testdrive.ModulesTester
+```

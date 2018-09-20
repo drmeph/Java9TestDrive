@@ -1,2 +1,1 @@
-module com.drmeph.java9testdrive{
-}
+module com.drmeph.java9testdrive {}
