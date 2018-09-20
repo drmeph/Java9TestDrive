@@ -88,3 +88,39 @@ Take a look at the last 2 commits :
 in order to make the project run.
 *  *985e9c9da066f0054d9157fbff9677c4616d7110* : This commit is getting rid of the Maven plugins from the POM file and MOST IMPORTANTLY
 creating the module-info.java file and manually adding the required dependencies
+
+## JShell
+The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. 
+JShell is a Read-Evaluate-Print Loop (REPL), which evaluates declarations, statements, and expressions as they are 
+entered and immediately shows the results. The tool is run from the command line.
+
+### Why use JShell
+Using JShell, you can enter program elements one at a time, immediately see the result, and make adjustments as needed.
+
+### How to Run JShell
+To start JShell, 2 options :
+* In terminal run :
+```
+$ jshell
+|  Welcome to JShell -- Version 9
+|  For an introduction type: /help intro
+
+jshell>
+```
+* In IDEA, if set to use JAVA 9 and up
+```
+Tools > JShell Console...
+```
+You can how write programs and immediately see the result : 
+```
+// create a doubled method
+int doubled(int i) { return i+2; }
+
+//list the created methods
+/method
+
+//run the method
+doubled(2)
+
+doubled(2) = 4
+```
