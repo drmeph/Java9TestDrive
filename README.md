@@ -79,3 +79,12 @@ javac -d target\mods\com.drmeph.java9testdrive src\main\java\module-info.java sr
 ```
 java --module-path target\mods -m com.drmeph.java9testdrive/com.drmeph.java9testdrive.ModulesTester
 ```
+
+### Real Life Example
+To look into a real life example, take a look at [spring-petclinic-java9-migration](https://github.com/drmeph/spring-petclinic-java9-migration).
+This project is a fork of the Spring Boot Sample application Pet Clinic originally created for JAVA 8, and migrated to JAVA9.
+Take a look at the last 2 commits :
+* *5eacd916af69f9c12d7d3d1b7099dd796ef13ea0* : This commit is moving the POM file to JAVA 9 and fixing any compilation error
+in order to make the project run.
+*  *985e9c9da066f0054d9157fbff9677c4616d7110* : This commit is getting rid of the Maven plugins from the POM file and MOST IMPORTANTLY
+creating the module-info.java file and manually adding the required dependencies
